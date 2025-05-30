@@ -18,4 +18,8 @@ function sumOfPrime(num1, num2){
     return sum
 }
 
-console.log(sumOfPrime(21, 50))
+const num1  = prompt('Enter a Number :')
+const num2  = prompt('Enter a Number :')
+
+
+console.log(sumOfPrime(num1, num2))
