@@ -1,8 +1,8 @@
-const range1 = prompt('Enter a number : ')
-const range2 = prompt('Enter a number : ')
+const num1 = prompt('Enter a number : ')
+const num2 = prompt('Enter a number : ')
 
     for(let i = range1; i <= range2; i++){
-        if(i%4 == 0 & i%6 == 0){
+        if(i%4 == 0 && i%6 == 0){
             console.log('QuadHex')
         }else if(i%4 == 0){
             console.log('Quad')
