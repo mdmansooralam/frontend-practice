@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1 - Highlight Paragraph</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            
+        }
+        .text-container{
+            background-color: rgb(253, 252, 252);
+            margin-inline: auto;
+            max-width: 500px;
+            margin-top: 100px;
+        }
+        p{
+            padding: 1rem;
+        }
+        p span{pointer-events: none;
+            
+        }
+
+        .highlight{background-color: yellow;}
+    </style>
+</head>
+<body>
+    
+    <div class="text-container">
+        <p >This is paragraph 1</p>
+        <p >This is paragraph 2</p>
+        <p >This is paragraph 3</p>
+        <p >This is paragraph 4</p>
+        <p >This is paragraph 5</p>
+
+    </div>
+
+    <script>
+        const paraGroup = document.querySelector('.text-container')
+        paraGroup.addEventListener('click', (e)=>{
+            e.target.classList.toggle('highlight')
+
+            if(e.target.classList.contains('highlight')){
+                const span = e.target.querySelector('span')
+                if(span){
+                    let count = parseInt(span.getAttribute('data-count')) 
+                    ++count
+                    span.setAttribute('data-count', count)
+                    span.innerText =  ` ( Click ${count} Times )`
+
+                }else{
+                    let span = document.createElement('span')
+                    let count = 1;
+                    span.setAttribute('data-count', count)
+                    span.innerText = ` ( Click ${count} Times )`
+                    e.target.append(span)
+
+
+                }
+            }
+
+            // if(e.target.classList.containt('highlight')){
+
+            //     console.log('now time to increse')
+            // }
+
+            let count = parseInt(e.target.querySelector('span')?.getAttribute('data-count')) 
+            
+            
+            
+        })
+        
+    </script>
+</body>
+</html>
