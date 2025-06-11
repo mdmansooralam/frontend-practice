@@ -45,8 +45,9 @@
         const paraGroup = document.querySelector('.text-container')
         paraGroup.addEventListener('click', (e)=>{
             e.target.classList.toggle('highlight')
-
+            console.log(e.target.tagName)
             if(e.target.classList.contains('highlight')){
+                
                 const span = e.target.querySelector('span')
                 if(span){
                     let count = parseInt(span.getAttribute('data-count')) 
