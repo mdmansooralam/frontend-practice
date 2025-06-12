@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+      }
+
+      .card {
+        max-width: 320px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: azure;
+        position: relative;
+
+      }
+      img {
+        width: 100%;
+      }
+      .card a{
+        position: absolute;
+        inset: 0;
+
+      }
+
+      .content{
+        padding: 10px;
+        
+      }
+      #triangle{
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent ;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid red;
+
+        
+      }
+      .circle{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        
+        
+
+
+
+      }
+      #shape-wrapeper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100px;
+        height: 200px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="shape-wrapper">
+      <div id="triangle">
+    </div>
+    <div class="circle"></div>
+    </div>
+    <div class="card">
+      <img
+        src="https://img.freepik.com/free-psd/wooden-podium-product-stand-empty-display-abstract-wooden-minimal-pedestal-luxury-natural-background-product-placement-3d-rendering_56104-2175.jpg?uid=R115228993&ga=GA1.1.774463893.1728898118&semt=ais_hybrid&w=740"
+        alt="alt"
+      />
+      <div class="content">
+        <div class="title">Card Title</div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+          voluptatum, error laboriosam itaque doloribus nisi sit praesentium
+          nemo ipsa alias accusantium qui nulla sunt cumque perferendis nam,
+          quibusdam molestias dolorum voluptas suscipit expedita non. Eligendi
+          quo dolore quisquam, voluptas consequatur accusantium nulla,
+          temporibus quod quam porro blanditiis totam laborum quas.
+        </p>
+      </div>
+      <a href="#"></a>
+    </div>
+  </body>
+</html>
